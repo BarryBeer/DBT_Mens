@@ -1,2 +1,1 @@
-test# DBT_Mens
-Lets build some stuff
+This is a test project set up in DBT to test its features in a biggish scale
