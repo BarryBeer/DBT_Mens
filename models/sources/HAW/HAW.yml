@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: HAW
+    config:
+      enabled: true
+    tables:
+      - name: Customers
+      - name: Departments
+      - name: Employees
+      - name: EmployeesPlanning
+      - name: Examinations
+      - name: MedicalCenters
+      - name: MedicalExaminations
+      - name: Nace
+      - name: PlanningEntities
+      - name: StatisticalCodes
