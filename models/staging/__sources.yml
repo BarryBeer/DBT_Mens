@@ -1,0 +1,30 @@
+
+version: 2
+
+sources:
+  - name: HAW
+    schema: HAW
+    description: Raw data from HAW application
+
+    tables:
+    - name: Customers
+      description: Klantenrecords
+    - name: Departments
+      description: Departementen voor MedCen data
+    - name: Employees
+      description: Records van medewerkers
+    - name: EmployeePlanning
+      description: Planningsrecords 
+    - name: Examinations
+      description: Uitgevoerde onderzoeken
+    - name: MedicalCenters
+      description: Gegevens van Medische Centra
+    - name: MedicalExaminations
+      description: Soorten onderzoeken
+    - name: Nace
+      description: buh iets
+    - name: PlanningEntities
+      description: jeej tzijn planningentities
+    - name: StatisticalCode
+      description: dimensies voor statistische codes
+ 
