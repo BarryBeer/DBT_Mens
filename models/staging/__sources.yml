@@ -9,6 +9,12 @@ sources:
     tables:
     - name: Customers
       description: Klantenrecords
+      columns: 
+        - name: id
+          descripion: unique ID for customer
+          data_test:
+            - not_null
+            - unique
     - name: Departments
       description: Departementen voor MedCen data
     - name: Employees
@@ -22,7 +28,7 @@ sources:
     - name: MedicalExaminations
       description: Soorten onderzoeken
     - name: Nace
-      description: buh iets
+      description: buh iets van beschrijving
     - name: PlanningEntities
       description: jeej tzijn planningentities
     - name: StatisticalCode
