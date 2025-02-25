@@ -3,8 +3,18 @@ version: 2
 
 sources:
   - name: HAW
-    schema: HAW
+    schema: HAW #Default schema same as name. Source function uses "name"
+    loaded_at_field: _loaded_at #Every source will get a loaded_at field, unless overwrite
     description: Raw data from HAW application
+
+    meta:
+      owner: "@Dries"
+
+    tags:
+      - HAW
+
+    config:
+      enabled: true # all sources are enbaled unless overwritten
 
     tables:
     - name: Customers
@@ -18,7 +28,9 @@ sources:
     - name: Departments
       description: Departementen voor MedCen data
     - name: Employees
-      description: Records van medewerkers
+      description: Medewerker data
+      config:
+        enabled: false
     - name: EmployeePlanning
       description: Planningsrecords 
     - name: Examinations
@@ -33,4 +45,10 @@ sources:
       description: jeej tzijn planningentities
     - name: StatisticalCode
       description: dimensies voor statistische codes
- 
+
+  - name: SuccesFactors
+    schema: SuccesFactors
+    descriptions: some data from SF
+
+    tables:
+    - name: Organogram
