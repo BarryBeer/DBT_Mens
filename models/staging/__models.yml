@@ -9,3 +9,57 @@ models:
         data_tests:
           - not_null
           - unique
+
+  - name: stg_departments
+    description: department information from HAW
+    columns:
+      - name: id
+        description: The unique key for each department
+        data_tests:
+          - not_null
+          - unique
+  
+  - name: stg_employee_planning
+    description: All planningrecords, both medical and company visit
+    columns:
+      - name: id
+        description: Unique key for a planningsrecord
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_examinations
+    description: All executed medical examinations
+    columns:
+      - name: id
+        description: Unique key for an examination
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_medical_centers
+    description: Data about medical centers
+    columns:
+      - name: id
+        description: Unique key for a medical center
+        data_tests:
+          - not_null
+          - unique      
+
+  - name: stg_medical_examinations
+    description: Data on different kinds of medical examinations
+    columns:
+      - name: id
+        description: Unique key for a kind of medical exam
+        data_tests:
+          - not_null
+          - unique      
+
+  - name: stg_nace
+    description: nace codes and stuff
+    columns:
+      - name: id
+        description: Unique key for a nace code
+        data_tests:
+          - not_null
+          - unique         

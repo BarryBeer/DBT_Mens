@@ -19,12 +19,6 @@ sources:
     tables:
     - name: Customers
       description: Klantenrecords
-      columns: 
-        - name: id
-          descripion: unique ID for customer
-          data_test:
-            - not_null
-            - unique
     - name: Departments
       description: Departementen voor MedCen data
     - name: Employees

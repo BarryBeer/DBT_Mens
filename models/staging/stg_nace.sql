@@ -1,0 +1,1 @@
+{{ standard_staging(Nace, id, nace_id) }}

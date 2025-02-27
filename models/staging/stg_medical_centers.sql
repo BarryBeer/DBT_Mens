@@ -1,0 +1,1 @@
+{{ standard_staging(MedicalCenters, id, medicalcenter_id) }}
