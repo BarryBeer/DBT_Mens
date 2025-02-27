@@ -1,0 +1,1 @@
+{{ standard_staging(HAW,MedicalExaminations, id, medicalexaminations_Id) }}

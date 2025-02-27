@@ -28,11 +28,20 @@ models:
           - not_null
           - unique
 
-  - name: stg_examinations
+  - name: stg_employees_examinations
     description: All executed medical examinations
     columns:
       - name: id
         description: Unique key for an examination
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_medical_examinations
+    description: Kinds of medical examinations
+    columns:
+      - name: id
+        description: Unique key for an examination kind
         data_tests:
           - not_null
           - unique

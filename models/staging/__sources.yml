@@ -27,7 +27,7 @@ sources:
         enabled: false
     - name: EmployeePlanning
       description: Planningsrecords 
-    - name: Examinations
+    - name: EmployeesExaminations
       description: Uitgevoerde onderzoeken
     - name: MedicalCenters
       description: Gegevens van Medische Centra
