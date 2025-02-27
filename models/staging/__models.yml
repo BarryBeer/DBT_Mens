@@ -62,4 +62,30 @@ models:
         description: Unique key for a nace code
         data_tests:
           - not_null
-          - unique         
+          - unique     
+
+  - name: stg_planningentities
+    description: data about planningentities
+    columns:
+      - name: id
+        description: Unique key for a PE
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_statistical_codes
+    description: data about customer statistical codes
+    columns:
+      - name: id
+        description: Unique key for a statistical code
+        data_tests:
+          - not_null
+          - unique       
+
+  - name: stg_organogram
+    description: organogram data coming from SF
+    columns:
+      - name: id
+        data_tests:
+          - not_null
+          - unique          
