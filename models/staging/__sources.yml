@@ -17,8 +17,10 @@ sources:
       enabled: true # all sources are enbaled unless overwritten
 
     tables:
-    - name: Customers
+    - name: GENCustomers
       description: Klantenrecords
+    - name: HAWCustomers
+      description: ook klantenrecords
     - name: Departments
       description: Departementen voor MedCen data
     - name: Employees

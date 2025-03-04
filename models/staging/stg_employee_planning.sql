@@ -9,6 +9,7 @@ renamed as (
         employeeid as employee_id,
         medicalcenterid as medicalcenter_id,
         MedicalExaminationsId as medicalexaminations_Id
+        ,*
         
     from {{ source('HAW', 'EmployeePlanning') }}
 

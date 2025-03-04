@@ -14,6 +14,6 @@ nace_codes as (
     select
         nace_codes
 
-    from {{ ref('stg_nace_codes')}}
+    from {{ ref('stg_nace')}}
 
 )
