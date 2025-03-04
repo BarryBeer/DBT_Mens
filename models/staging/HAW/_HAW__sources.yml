@@ -1,4 +1,3 @@
-
 version: 2
 
 sources:
@@ -37,14 +36,11 @@ sources:
       description: Soorten onderzoeken
     - name: Nace
       description: buh iets van beschrijving
+    - name: Organogram
+      description: Mensura Employee data
     - name: PlanningEntities
       description: jeej tzijn planningentities
     - name: StatisticalCode
       description: dimensies voor statistische codes
-
-  - name: SuccesFactors
-    schema: SuccesFactors
-    descriptions: some data from SF
-
-    tables:
     - name: Organogram
+      description: HAW dingen van organogram

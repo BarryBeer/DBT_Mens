@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_SuccesFactors__organogram
+    description: Organogram data from Succesfactors
+    columns:
+      - name: userid
+        description: The unique key for each Mensura Employee
+        data_tests:
+          - not_null
+          - unique

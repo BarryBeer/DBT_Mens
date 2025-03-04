@@ -1,6 +1,6 @@
 with
 
-HAWcustomers as (
+renamed as (
 
     select
         id as customer_id,
@@ -8,16 +8,8 @@ HAWcustomers as (
         departmentid as department_id,
         medicalcenterid as medicalcenter_id,
         statisticalcodeid as statisticalcode_id
-        ,*
         
-    from {{ source('HAW', 'customers') }}
-
-),
-
-GENcustomers as (
-
-    select
-        id as customer_id
+    from {{ source('HAW', 'HAWcustomers') }}
 
 )
 

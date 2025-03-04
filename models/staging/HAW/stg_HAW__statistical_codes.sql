@@ -1,0 +1,1 @@
+{{ standard_staging(HAW,statisticalcode, id, statisticalcode_id) }}

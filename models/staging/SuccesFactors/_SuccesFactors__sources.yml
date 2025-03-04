@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: SuccesFactors
+    schema: SuccesFactors
+
+    loaded_at_field: _loaded_at #Every source will get a loaded_at field, unless overwrite
+    descriptions: some data from SF
+
+    meta:
+      owner: "@Dries"
+
+    tags:
+      - SF
+
+    config:
+      enabled: true # all sources are enbaled unless overwritten
+      
+    tables:
+    - name: Organogram
