@@ -109,8 +109,8 @@ models:
           - not_null
           - unique       
 
-  - name: stg_HAW__organogram
-    description: organogram data coming from SF
+  - name: stg_HAW__timecells
+    description: tijdcelleeeee
     columns:
       - name: id
         data_tests:
