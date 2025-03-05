@@ -3,7 +3,7 @@ with
 renamed as (
 
     select
-        id as customer_id,
+        customerid as customer_id,
         naceid as nace_id,
         departmentid as department_id,
         medicalcenterid as medicalcenter_id,
