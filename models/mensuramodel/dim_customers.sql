@@ -44,15 +44,8 @@ departments as (
         department_id,
 
         DictionaryId_NL AS 'Departement_Naam'
-
-),
-medical_centers as (
-
-    select
-        medicalcenter_id,
-        globalcenterid as globalcenter_id,
-
-        Name as 'MedischCentrum_Naam'
+    
+    from {{ ref('stg_HAW__departments') }}
 
 ),
 statistical_codes as (
@@ -60,10 +53,37 @@ statistical_codes as (
     select
         statisticalcode_id
 
+    from {{ ref('stg_HAW__statistical_codes') }}
+
+),
+medical_centers as (
+
+    select
+        medicalcenter_id,
+
+        MedischCentrum_Naam,
+        GlobaalMedischCentrum_Naam
+
+    from {{ ref('dim_medical_centers') }}
+
 )
 
 select
-*
+    basic_customers.customer_id,
+
+    basic_customers.Klant_ConnectieDatum,
+    basic_customers.Klant_OpzegDatum,
+
+    extra_customers.Klant_Naam,
+    extra_customers.Klant_Code,
+
+    nace_codes.Nace_Code,
+    nace_codes.Nace_Activiteit,
+
+    departments.Departement_Naam,
+
+    medical_centers.MedischCentrum_Naam,
+    medical_centers.GlobaalMedischCentrum_Naam
 from
 basic_customers
 INNER JOIN 
@@ -81,3 +101,4 @@ INNER JOIN
 INNER JOIN 
     statistical_codes
     ON basic_customers.statisticalcode_id = statistical_codes.statisticalcode_id
+
